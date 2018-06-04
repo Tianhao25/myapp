@@ -1,0 +1,36 @@
+<div class="container color-dark">
+  <div class="col">
+    <p>Any Suggestions?</p>
+  </div>
+  <div class="col">
+    <p>
+      Your suggestions list ({{ suggestionCount }})
+    </p>
+  </div>
+</div>
+
+<div class="container color-light">
+  <div class="col">
+    <p>Your donations would be greatly appreciated. If you have any comments or suggestions, they would be greatly appreciated. </p>
+    <form action="/" method="get">
+      <input type="text" class="txt" name="item" placeholder="You should be cool..." [(ngModel)]="suggestionText">
+      <input type="submit" class="btn" [value]="btnText" >
+    </form>
+  </div>
+  <div class="col">
+    <p class="life-container" *ngFor="let sugg of suggs">
+      {{ sugg }}
+    </p>
+  </div>
+</div>
+
+<div class="container color-dark">
+  <div class="col">
+    <form action="https://us.account.samsung.com/account/check.do" method="post">
+        <input name="registURL" />
+        <!-- <div className="login-form"> -->
+          <button type="submit" id="signInButton">SIGN IN</button>
+        <!-- </div> -->
+    </form>
+  </div>  
+</div>
